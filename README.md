@@ -10,7 +10,7 @@ unix/windows kernel respecting GNU ethique to support everything.
 
 ### Development
 
-Development is regulated by CONTRIBUTING.md
+Development is regulated by [CONTRIBUTING.md](CONTRIBUTING.md)
 
 This repository respects GNU ethique to support everything so code is expected to be written assuming that other platforms are a concern assuming usage of fixme messages for features that are not yet supported with a message informing where is the unimplemented code and comment with any additional info that would help with the implementation
 
