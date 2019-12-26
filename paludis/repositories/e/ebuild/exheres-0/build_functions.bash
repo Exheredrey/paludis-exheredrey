@@ -23,8 +23,13 @@
 # this program; if not, write to the Free Software Foundation, Inc., 59 Temple
 # Place, Suite 330, Boston, MA  02111-1307  USA
 
-alias die_unless_nonfatal='paludis_die_unless_nonfatal_func "$FUNCNAME" "$LINENO"'
-alias assert_unless_nonfatal='_pipestatus="${PIPESTATUS[*]}"; [[ -z "${_pipestatus//[ 0]/}" ]] || paludis_die_unless_nonfatal_func "$FUNCNAME" "$LINENO" "$_pipestatus"'
+
+die_unless_nonfatal() { paludis_die_unless_nonfatal_func "$FUNCNAME" "$LINENO" ;}
+
+assert_unless_nonfatal() {
+    _pipestatus="${PIPESTATUS[*]}"
+    [[ -z "${_pipestatus//[ 0]/}" ]] || paludis_die_unless_nonfatal_func "$FUNCNAME" "$LINENO" "$_pipestatus"
+}
 
 nonfatal()
 {
