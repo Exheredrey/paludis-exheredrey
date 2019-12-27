@@ -1,5 +1,6 @@
-Authors of Paludis
-==================
+# Paludis authors
+
+Authors are expected to add themself
 
 Ciaran McCreesh <ciaran.mccreesh@googlemail.com>
     Main code
@@ -67,3 +68,5 @@ Ali Polatel <polatel@gmail.com>
 Ingmar Vanhassel <ingmar@exherbo.org>
     Contributor, zsh completion
 
+Jacob Hrbek <kreyren@rixotstudio.cz>
+    Contributor, exheredrey-0 library
